@@ -1,0 +1,26 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@800&display=swap');
+
+:root {
+    --cinza: #444444;
+}
+ .paginaInicial{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+} 
+
+.paginaInicial__banner{
+    width: 100%;
+}
+
+.paginaInicial__boasVindas{
+    position: absolute;
+    align-self: center;
+    font-family: 'Calistoga';
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--cinza);
+    text-align: center;
+}
+
