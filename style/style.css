@@ -55,7 +55,7 @@
     color: var(--cinza);
     text-align: center;
 }
-
+/* rodapé */
 .rodape__container{
     display: flex;
     justify-content: space-between;
