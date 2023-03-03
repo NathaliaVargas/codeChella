@@ -9,36 +9,52 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 <body>
     <header class="cabecalho">
         <section class="cabecalho__logo">
-            <img src="./img/logo.png">
+            <div class="cabecalho__img">
+                <img src="./img/logo.png">
+            </div>
+            <div class="cabecalho__iconMenu">
+                <!-- <span class="material-symbols-outlined" id="botaoMenu"> menu </span> -->
+            </div>
         </section>
 
         <section class="cabecalho__menu">
-                <a class="cabecalho__menu__item" href="#">A experiência</a>
-                <a class="cabecalho__menu__item" href="#">Mapa de Setores</a>
-                <a class="cabecalho__menu__item" href="#">Informações</a>
-                <a class="cabecalho__menu__item" href="#">Ingresso</a>
-
+            <nav class="menu-mobile">
+                <li><a class="cabecalho__menu__item" href="#">A experiência</a></li>
+                <li><a class="cabecalho__menu__item" href="#">Mapa de Setores</a></li>
+                <li><a class="cabecalho__menu__item" href="#">Informações</a></li>
+                <li><a class="cabecalho__menu__item" href="#">Ingresso</a></li>                
+            </nav>
+            <script src="menu.js"></script>
+            <span class="btn-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              
         </section>
     </header>
 
     <main>
         <div class="paginaInicial">
             <img src="./img/banner.png" class="paginaInicial__banner">
+            <img src="./img/bannerCelular.png" class="paginaInicial__bannerCelular">
             <h1 class="paginaInicial__boasVindas">
                 Boas-vindas ao <br> #CodeChella2023!</h1>
         </div>
         <section class="conteudo__evento">
         <div class="data">
             <img src="./img/imagem1.png" class="imagemData">
+            <img src="./img/imagem1__Cel.png" class="imagemDat__Cel">
 
             <div class="data__evento__texto">
-                <h2 class="data__evento"> < 11 e 12 de Março >
-                <br>  Aluródromo de São Paulo </h2>
+                <h2 class="data__evento"> <11 e 12 de Março>
+                    <br>  Aluródromo de São Paulo </h2>
                 <p>Hora de programar nossa memória com novas lembranças! 
                     Uma nova experiência sobre música, linguagens e, claro, tecnologia! 
                     Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
@@ -52,23 +68,23 @@
             <h3 class="lineUp__texto">/Line-Up/</h3>
         </div>
         <div class="sabado">
-             <h1 class="titulo"> SÁBADO < 11/03 > </h1>
+             <h1 class="titulo"> SÁBADO <11/03> </h1>
           <h2 class="bandaPrincipal">System of a DOM</h2>
-            <ul class="bandasDois">
+            <ul class="bandas">
                 <li class="bandasDois">Python Maiden</li>
                 <li class="bandasDois">Apollo Client 2001</li>
                 <li class="bandasDois">Bon Java</li>
                 <li class="bandasDois">NickCallback</li>
             </ul>
 
-            <ul>
+            <ul class="bandas">
                 <li class="bandasTres">Linkin Promises</li>
                 <li class="bandasTres">Fullstack Fighters1</li>
                 <li class="bandasTres">Papa React</li>
                 <li class="bandasTres">Angular in Chains</li>
             </ul>
 
-            <ul>
+            <ul class="bandas">
                 <li class="bandasQuatro">Agnostic Front-end</li>
                 <li class="bandasQuatro">SlipkNode</li>
                 <li class="bandasQuatro">Pink Flutter</li>
@@ -77,9 +93,9 @@
 
         </div>
         <div class="domingo">
-            <h1 class="titulo"> DOMINGO < 12/03 > </h1>
+            <h1 class="titulo"> DOMINGO <12/03> </h1>
             <h2 class="bandaPrincipal">Lana Del Ploy</h2>
-            <ul>
+            <ul class="bandas">
                 <li class="bandasDois">Dua Lib</li>
                 <li class="bandasDois">The Backnd</li>
                 <li class="bandasDois">CSS Styles</li>
@@ -87,7 +103,7 @@
                 <li class="bandasDois">ArrayAna Grande</li>
             </ul>
 
-            <ul>
+            <ul class="bandas">
                 <li class="bandasTres">Miley Cypress</li>
                 <li class="bandasTres">The Bootstrap Boys</li>
                 <li class="bandasTres">Json Derulo</li>
@@ -95,7 +111,7 @@
                 <li class="bandasTres">Dev Lovato</li>
             </ul>
 
-            <ul>
+            <ul class="bandas">
                 <li class="bandasQuatro">Kylie MiLOG</li>
                 <li class="bandasQuatro">Jenkins Brothers</li>
                 <li class="bandasQuatro">Rubycat Dolls</li>
@@ -103,25 +119,31 @@
           </div>
 
           <img src="./img/fimPart1.png" class="imagemFinalPag1">
+          <img src="./img/fimPart1Tablet.png" class="imagemFinalTablet">
+          <img src="./img/fimPart1Cel.png" class="imagemFinalCel">
     </section>
 
     </main>
 
     <footer class="rodape__container">
         <section class="redes">
-            <img src="./img/logo-rodape.png" class="logo-rodape">
+                <img src="./img/logo-rodape.png" class="logo-rodape">
             <div class="rodape__texto">
-                <p  class="rodape__texto__texto">Acesse nossas redes:</p> 
-                <img src="./img/instagram.png"> 
-                <img src="./img/twitch.png">
-                <img src="./img/twitter.png">
-                <img src="./img/whatsapp.png">     
+                <p  class="rodape__texto__texto">Acesse nossas redes:</p>
+                    <div class="img__redeSocial">
+                        <img src="./img/instagram.png"> 
+                        <img src="./img/twitch.png">
+                        <img src="./img/twitter.png">
+                        <img src="./img/whatsapp.png">  
+                    </div>   
             </div>
         </section>
 
         <section class="credito">
-            <p  class="rodape__texto__credito">Desenvolvido por Alura. <br>
-                Projeto fictício sem fins comerciais.</p>
+            <div class="rodape__texto__credito">
+                <p>Desenvolvido por Alura. <br>
+                    Projeto fictício sem fins comerciais.</p>
+            </div>
         </section>
     </footer>
 </body>
