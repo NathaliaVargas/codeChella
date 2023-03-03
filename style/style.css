@@ -177,12 +177,13 @@
     font-weight: 400;
     font-size: 64px;
     color: var(--cinza);
-    padding: 32px 0 32px 0;
+    padding: 32px 0 37px 0;
 }
 
 .titulo {
     color: white;
     position: relative;
+    display: inline-block;
     align-self: center;
     text-align: center;
     width: 490px;
@@ -192,6 +193,52 @@
     font-weight: 400;
     padding: 16px;
 }
+
+.titulo::before, .titulo::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 359.5px;
+  height: 0.05em;
+  background-color:#DF9010;
+  left: -400px;
+}
+.titulo::after {
+    left: initial;
+    right: -400px;
+}
+
+/* teste linha */
+/* .titulo__domingo {
+    color: white;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    width: 490px;
+    background-color: #DF9010;
+    font-family: 'Calistoga';
+    font-size: 48px;
+    font-weight: 400;
+    padding: 16px;
+}
+
+.titulo__domingo::before, .titulo__domingo::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 359.5px;
+  height: 0.05em;
+  background-color:#DF9010;
+  left: -400px;
+}
+.titulo__domingo::after {
+    left: initial;
+    right: -400px;
+} */
+
+
+/* fim teste linha */
 
 .bandaPrincipal {
     display: flex;
@@ -221,12 +268,6 @@
     color: var(--cinza);
     padding-bottom: 56px;
     gap: 32px;
-}
-
-hr{
-    position: relative;
-    width: 359.5px;
-    border: 1px solid #DF9010;
 }
 .sabado ul li {
     display: inline-block;
