@@ -45,11 +45,11 @@
     height: 64px;
 }
 
-.cabecalho__menu li{
+.cabecalho__menu{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+    align-items: center;
     text-align: center;
     margin: 20px 120px 20px 20px;
     gap: 32px;

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;800&display=swap');
+
+:root {
+    --cinza: #444444;
+    --azul-escuro: #2E7BA2;
+    --raleway: 'Raleway', sans-serif;
+}
+
+.conteudo__evento p {
+    font-family: var(--raleway);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza);
+    flex-grow: 1;
+}
+
+.container__experiencias{
+    display: flex;
+    justify-content: flex-start;
+    text-align: end;
+    font-family: var(--raleway);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 121.5px;
+    flex-grow: 1;
+}
+
+.sustentabilidade{
+    text-align:right;
+    margin-right: 48px;
+    flex-grow: 1;
+}
+
+.imgSustentabilidade__pc{
+    margin-left: 48px;
+    flex-grow: 1;
+}
+
+
+.container__experiencia__item{
+    width: 540px;
+    margin-top: 83px;
+    margin-left: 48px;
+    font-family: var(--raleway);
+    text-align: start;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--cinza);
+} 
+
+.itensExperiencia{
+    padding-top: 24px;
+}
+
+
+
+@media(min-width: 500px){
+    .imgAcessibilidade__cel, .imgSustentabilidade__cel, .imgAtracoes__cel, .paginaInicial__bannerCelular{
+        display: none;
+    }
+
+    #botaoMenu{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .listaExperiencia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0 0 0;
+    }
+
+    .container__experiencias img{
+        height: 381px;
+    }
+}
