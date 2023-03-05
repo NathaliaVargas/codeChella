@@ -31,12 +31,10 @@
 .sustentabilidade{
     text-align:right;
     margin-right: 48px;
-    flex-grow: 1;
 }
 
 .imgSustentabilidade__pc{
     margin-left: 48px;
-    flex-grow: 1;
 }
 
 
@@ -63,12 +61,70 @@
         display: none;
     }
 
+    .container__experiencias .celular{
+        display: none;
+    }
+
     #botaoMenu{
         display: none;
     }
 }
 
+@media (max-width: 768px) {
+
+    .container__experiencias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 64px 0 0 0;
+        
+    }
+
+    .container__experiencia__item, .sustentabilidade{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .imgSustentabilidade__pc{
+        margin: 0;
+    }
+
+    #container { 
+        display: flex; 
+        flex-direction: column; 
+      }
+
+    #divum { 
+        order: 2; 
+      }
+      
+    #div2 {
+        order: 1; 
+      }
+
+}
+
 @media(max-width: 500px){
+
+    #img__pc{
+        display: none;
+    }
+
+    .conteudo__evento p {
+        width: 312px;
+    }
+
+    .container__experiencias li{
+        width: 312px
+    }
+
     .listaExperiencia{
         display: flex;
         flex-direction: column;
