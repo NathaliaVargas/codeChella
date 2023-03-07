@@ -7,6 +7,7 @@
     <title>CodeChella - Setores</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/setores.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -23,11 +24,11 @@
         </section>
 
         <section class="cabecalho__menu">
-            <a class="cabecalho__menu__item" href="index.html">Home</a>
-            <a class="cabecalho__menu__item" href="experiencia.html">A experiência</a>
-            <a class="cabecalho__menu__item" href="setores.html">Mapa de Setores</a>
-            <a class="cabecalho__menu__item" href="informacoes.html">Informações</a>
-            <a class="cabecalho__menu__item" href="ingresso.html">Ingresso</a>
+                <a class="cabecalho__menu__item" href="index.html">Home</a>
+                <a class="cabecalho__menu__item" href="experiencia.html">A experiência</a>
+                <a class="cabecalho__menu__item" href="setores.html" style="text-decoration: underline;">Mapa de Setores</a>
+                <a class="cabecalho__menu__item" href="informacoes.html">Informações</a>
+                <a class="cabecalho__menu__item" href="ingresso.html">Ingresso</a>
 
         </section>
     </header>
@@ -35,11 +36,56 @@
     <main>
         <div class="paginaInicial">
             <img src="./setores/banner.png" class="paginaInicial__banner">
-            <!-- <img src="./img/bannerTablet.png" class="paginaInicial__bannerTablet">
-            <img src="./img/bannerCelular.png" class="paginaInicial__bannerCelular"> -->
+            <!-- <img src="./img/bannerTablet.png" class="paginaInicial__bannerTablet">-->
+            <img src="./img/bannerCelular.png" class="paginaInicial__bannerCelular"> 
             <h1 class="paginaInicial__boasVindas">
                 Mapa de setores <br> #CodeChella2023!</h1>
 
+        </div>
+        <section class="conteudo__evento">
+            <div class="mapa">
+                <div class="mapaSetores">
+                    <img src="./setores/mapaSetores.png" alt="imagem do mapa de setores com cores diferenciando os espaços">
+                </div>
+                <div class="legenda">
+                    <ul class="legendaLista">
+                        <p class="legendaTitulo">Legenda:</p>
+                        <li class="legendaLista_item" style="list-style-image: url('/setores/setor1.png')">Pista Premium</li>
+                        <li class="legendaLista_item" style="list-style-image: url('/setores/setor2.png')">Pista Comum</li>
+                        <li class="legendaLista_item" style="list-style-image: url('/setores/setor3.png')">Cadeiras térreo</li>
+                        <li class="legendaLista_item" style="list-style-image: url('/setores/setor4.png')">Cadeiras superiores</li>
+                        <li class="legendaLista_item" style="list-style-image: url('/setores/setor5.png')">Rampas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setoresMais">
+                <h2 class="titulo__sobreSetores">Mais detalhes sobre os setores</h2>
+                <div class="sobreSetores">
+                    
+                    <div class="imagemTextos">    
+                        <img src="./setores/imagem1.png" alt="imagem do setor pista">
+                        <h2 class="subtituloSetores">Pista</h2>
+                        <p class="textoSetores">Pista convencional, atendida pelos bares e banheiros das laterais do estádio. 
+                        Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+                    </div>
+                    <div class="imagemTextos">
+                        <img src="./setores/imagem2.png" alt="imagem do setor pista premium">
+                        <h2 class="subtituloSetores">Pista Premium</h2>
+                        <p class="textoSetores">Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. 
+                            Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.</p>
+                    </div>
+
+                    <div class="imagemTextos">
+                        <img src="./setores/imagem3.png" alt="imagem das cadeiras do espaço">
+                        <h2 class="subtituloSetores">Cadeiras</h2>
+                        <p class="textoSetores">Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, 
+                        visão um pouco elevada em relação às pistas.</p>
+                    </div>
+                </div>
+        </div>
+
+
+        </section>
             </main>
 
             <footer class="rodape__container">
