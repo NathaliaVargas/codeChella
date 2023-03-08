@@ -64,6 +64,14 @@
     text-decoration-line: underline;
 }
 
+/* .botaoMenu{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/menu.png);
+
+} */
+
 
 .paginaInicial{
     display: flex;
@@ -431,7 +439,7 @@
         align-items: center;
     }
     
-    .cabecalho__menu__item{
+     .cabecalho__menu__item{
         display: none;
     }
 
